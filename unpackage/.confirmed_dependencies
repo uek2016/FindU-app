@@ -1,0 +1,47 @@
+{
+  "index.html": {
+    "resources": [
+      "/phone/js/main.js",
+      "/m_login.html",
+      "/phone/css/main.css",
+      "/phone/js/jquery.js",
+      "phone/js/main.js",
+      "phone/js/jquery.js",
+      "m_login.html",
+      "phone/css/main.css"
+    ],
+    "refer": [
+      "/m_login.html",
+      "m_login.html"
+    ]
+  },
+  "m_login.html": {
+    "resources": [
+      "/phone/js/messages_zh.js",
+      "/phone/js/jquery.js",
+      "/phone/js/jquery.validate.js",
+      "/phone/js/login.js",
+      "phone/js/messages_zh.js",
+      "phone/js/login.js",
+      "phone/imgs/wlh/wlh_logo.png",
+      "phone/imgs/wlh/wlh_xiugai.png",
+      "phone/imgs/wlh/wlh_reset_title.png",
+      "phone/js/jquery.validate.js",
+      "phone/imgs/wlh/wlh_photo.png",
+      "phone/imgs/wlh/wlh_resize.png",
+      "phone/imgs/wlh/wlh_login_bg_min.png",
+      "phone/imgs/wlh/wlh_login_line_min.png",
+      "phone/imgs/wlh/wlh_mima.png",
+      "phone/imgs/wlh/wlh_resize_bg.png",
+      "phone/css/login.css",
+      "phone/imgs/wlh/wlh_user.png",
+      "phone/imgs/wlh/wlh_wen.png",
+      "/index.html",
+      "index.html"
+    ],
+    "refer": [
+      "/index.html",
+      "index.html"
+    ]
+  }
+}
