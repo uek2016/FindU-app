@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="findu">
+		<title>加班信息</title>
+		<script src="phone/js/jquery.js"></script>
+		<script src="phone/js/lxr_extra_work.js"></script>
+		<script src="phone/js/lxr_calender.js"></script>
+		<script src="phone/js/touch.js"></script>
+		<link rel="stylesheet" href="phone/css/lxr_extra_work.css" />
+	</head>
+	
+	<body>
+		<!--头部-->
+		<div class="lxr_extra_title">
+			<div class="lxr_extra_title_left">
+				<a class="lxr_extra_back" href="">&lt;</a>
+				<span class="lxr_extra_month">2016年8月</span>
+			</div>
+			<div class="lxr_extra_title_right">
+				<div class="lxr_extra_liebiao"></div>
+				<div class="lxr_extra_add">+</div>
+			</div>
+		</div>
+		
+		<!--日历-->
+		<div class="lxr_rili_area">
+			<div class="lxr_rili_title">
+	          <div class="col col1 "> 一</div>
+	          <div class="col col2 "> 二</div>
+	          <div class="col col3 "> 三</div>
+	          <div class="col col4 "> 四</div>
+	          <div class="col col5 "> 五</div>
+	          <div class="col col6 weekend"> 六</div>
+	          <div class="col col7 weekend"> 日</div>
+	        </div>
+			<div class="month-body" id="monthbody">
+	            <div class="row row1">
+	              <div class="col col1 ">
+	              	<div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col2 "><div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col3 "><div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col4 "><div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col5 "><div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col6 weekend"><div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col7 weekend"><div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	            </div>
+	            <div class="row row2">
+	              <div class="col col1"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col2"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col3"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col4"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col5"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col6 weekend"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col7 weekend"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	            </div>
+	            <div class="row row3">
+	              <div class="col col1"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col2"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col3"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col4"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col5"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col6 weekend"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col7 weekend"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	            </div>
+	            <div class="row row4">
+	              <div class="col col1"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col2"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col3"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col4"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col5"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col6 weekend"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col7 weekend"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	            </div>
+	            <div class="row row5">
+	              <div class="col col1"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col2"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col3"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col4"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col5"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col6 weekend"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	              <div class="col col7 weekend"> <div class="cell"></div>
+	              	<div class="lxr_dian"></div>
+	              </div>
+	            </div>
+	            <div class="row row6">
+	              <div class="col col1"> <div class="cell"></div></div>
+	              <div class="col col2 "> <div class="cell"></div></div>
+	              <div class="col col3 "> <div class="cell"></div></div>
+	              <div class="col col4 "> <div class="cell"></div></div>
+	              <div class="col col5 "> <div class="cell"></div></div>
+	              <div class="col col6  weekend"> <div class="cell"></div></div>
+	              <div class="col col7  weekend"> <div class="cell"></div></div>
+	            </div>
+          		<div class="lxr_gotoday">today</div>
+			</div>
+		</div>
+		
+		<!--加班信息-->
+		<div class="lxr_extra_workinfor">
+			<ul class="lxr_extrawork_ul">
+				<li class="lxr_extrawork_li">
+					<div class="lxr_list_ri">11日</div>
+					<div class="lxr_list_time">
+						<span>18:30</span>
+						<br />
+						<span>20:30</span>
+					</div>
+					<div class="lxr_list_content">
+						<span>通讯录</span>
+						<br />
+						<p>加班列表页，进度10%，未能当天完成</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<!--选项卡-->
+		
+		
+		
+	</body>
+	
+	
+</html>
