@@ -1,0 +1,45 @@
+.head{
+	border-top:15px solid #EBEBEB;
+	width: 100%;
+	border-bottom:15px solid #EBEBEB;
+	padding-left: 15px;
+	overflow: hidden;	
+	color: #585858;
+	margin-top: 40px;
+}
+.head img{
+	height: 70px;float: left;
+}
+.head .preDes{
+	float: left;padding-left: 25px;
+	line-height: 35px;
+	font-size: 18px;
+	color: #585858;
+}
+.head .preDes .tel{
+	color:#A0A0A0 ;font-size: 14px;
+}
+.preDes span{
+	float: left;
+}
+
+.mPass{
+	width: 100%;
+	border-bottom: 1px solid #A0A0A0;
+	padding-left: 25px;
+	line-height: 40px;
+}
+.mPass img,.bqsm img{
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.mPass a,.bqsm a{
+	color: #585858;
+	text-decoration: none;
+}
+.bqsm{
+	width: 100%;
+	border-bottom: 1px solid #A0A0A0;
+	padding-left: 25px;
+	line-height: 40px;
+}
