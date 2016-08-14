@@ -8,27 +8,36 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="apple-mobile-web-app-title" content="findu">
 		<link rel="apple-touch-icon" href="./phone/imgs/findu.png">
+		<link href="css/mui.min.css" rel="stylesheet" />
 		<title>uek</title>
+		<script src="js/mui.min.js"></script>
 		<script src="./phone/js/jquery.js" charset="utf-8"></script>
 		<script src="./phone/js/main.js" charset="utf-8"></script>
 		<script>
-			if(localStorage.sgqphone) {} else {
-				location.href = "./m_login.html";
-			}
+			
+			document.addEventListener("plusready",function(){
+					$('.zkf_me')[0].addEventListener("tap",function(){
+						var zkf_me=plus.webview.create("_www/zkf-me.html","zkf_me");
+							zkf_me.show("slide-in-right");
+					})
+				
+			})
 		</script>
+		
 		<link rel="stylesheet" href="./phone/css/main.css">
 		<link rel="stylesheet" href="./phone/css/iconfont.css">
 	</head>
 
 	<body>
+
 		<div class="header">
-			<a class="lxr_change iconfont icon-xiugaimima" href="./m_login.html"></a>
-			<span class="lxr_people">Connect Unique<span>
-			<a class="lxr_information" href="./slide.html">@</a>
+			<a class="lxr_change iconfont icon-xiugaimima" href="/app/login"></a>
+			<span class="lxr_people">Connect Unique</span>
+			<a class="lxr_information" href="/app/copyright">@</a>
 		</div>
 
 		<div class="sub-header">
-			<input type="text" class="search" id="search">
+			<input type="text" placeholder="搜索拼音,姓名,电话,小号" class="search" id="search">
 		</div>
 
 		<div class="content">
@@ -37,6 +46,20 @@
 			<dl class="userlist">
 			</dl>
 		</div>
+		<nav class="mui-bar mui-bar-tab">
+		    <a class="mui-tab-item mui-active">
+		        <span class="mui-icon mui-icon-phone"></span>
+		        <span class="mui-tab-label">通讯录</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-email"></span>
+		        <span class="mui-tab-label">加班表</span>
+		    </a>
+		    <a class="mui-tab-item zkf_me">
+		        <span class="mui-icon mui-icon-gear"></span>
+		        <span class="mui-tab-label">我</span>
+		    </a>
+		</nav>
 	</body>
 
 </html>
