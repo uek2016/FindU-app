@@ -14,8 +14,9 @@
 
 					$('.mPass')[0].addEventListener("tap",function(){
 						plus.storage.sgqreset == "true"
-						var sgq_reset=plus.webview.create("http://192.167.1.102:3000/app/reset","sgq_reset");
+						var sgq_reset=plus.webview.create("http://192.167.1.111:3000/app/reset","sgq_reset");
 						sgq_reset.show();
+						plus.webview.close("zkf_me");
 					})
 					$('.bqsm')[0].addEventListener("tap",function(){
 						var sgq_bqsm=plus.webview.create("_www/slide.html","bqsm");

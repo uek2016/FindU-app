@@ -16,9 +16,16 @@
 		<script>
 			
 			document.addEventListener("plusready",function(){
+				
+					var current= plus.webview.currentWebview();
 					$('.zkf_me')[0].addEventListener("tap",function(){
 						var zkf_me=plus.webview.create("_www/zkf-me.html","zkf_me");
-							zkf_me.show("slide-in-right");
+						zkf_me.show("slide-in-right");
+					})
+					$(".lxr_extra")[0].addEventListener("tap",function(){
+						var lxr_extra=plus.webview.create("./extra","lxr_extra",{top:0,bottom:50});
+						current.append(lxr_extra)
+						lxr_extra.show("slide-in-right");
 					})
 				
 			})
@@ -51,7 +58,7 @@
 		        <span class="mui-icon mui-icon-phone"></span>
 		        <span class="mui-tab-label">通讯录</span>
 		    </a>
-		    <a class="mui-tab-item">
+		    <a class="mui-tab-item lxr_extra">
 		        <span class="mui-icon mui-icon-email"></span>
 		        <span class="mui-tab-label">加班表</span>
 		    </a>
